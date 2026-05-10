@@ -1,7 +1,10 @@
 import joblib
 import pandas as pd
+from pathlib import Path
 
-MODEL_PATH = "models/predict_freight_model.pkl"
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+MODEL_PATH = BASE_DIR / "freight_cost_prediction" / "models" / "predict_freight_model.pkl"
 
 
 def load_model(model_path: str = MODEL_PATH):
@@ -34,7 +37,6 @@ if __name__ == "__main__":
     
     # Example inference run (local testing)
     sample_data = {
-        "Quantity": [1200,2830],
         "Dollars": [18500,9000]
     }
     prediction = predict_freight_cost(sample_data)

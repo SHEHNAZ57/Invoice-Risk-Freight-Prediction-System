@@ -10,7 +10,7 @@ from modeling_evaluation import (
 )
 
 def main():
-    db_path = "data/inventory.db"
+    db_path = r"C:\Users\A\Desktop\Nexus_Internship\Inventory-Invoice-Analytics\Inventory-Invoice-Analytics\data\inventory.db"
     model_dir = Path("models")
     model_dir.mkdir(exist_ok=True)
 
