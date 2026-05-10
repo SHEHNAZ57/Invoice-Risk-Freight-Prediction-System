@@ -150,10 +150,11 @@ invoice-risk-detection-system/
 ├── app.py
 ├── requirements.txt
 └── README.md
+```
 
-## How to Run This Project (Complete Guide)
+---
 
-Clone the repository, install dependencies, and run the application using the steps below:
+## ▶️ How to Run This Project
 
 ```bash
 # 1. Clone the repository
@@ -162,16 +163,26 @@ git clone https://github.com/your-username/invoice-risk-detection-system.git
 # 2. Move into project directory
 cd invoice-risk-detection-system
 
-# 3. Install required dependencies
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. (Optional) Train models if not already available in /models folder
+# 4. (Optional) Train models if not already available
 python freight_cost_prediction/train.py
 python invoice_flagging/train.py
 
-# 5. Run inference scripts (testing models)
+# 5. Run inference scripts
 python inference/predict_freight.py
 python inference/predict_invoice_flag.py
 
-# 6. Launch the Streamlit application
+# 6. Launch Streamlit app
 streamlit run app.py
+```
+
+---
+
+## 👤 Author & Contact
+
+- Author: Shainaz  
+- Project: Invoice Risk & Freight Prediction System  
+- Purpose: Machine Learning Internship / Portfolio Project  
+- GitHub: https://github.com/SHEHNAZ57
